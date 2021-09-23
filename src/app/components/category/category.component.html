@@ -1,0 +1,15 @@
+<ul  class="list-group">
+ <li class="btn btn-dark text-light"
+ routerLink="/products"
+ >Tüm Ürünler</li>
+ <li 
+ routerLink="/products/category/{{category.categoryId}}"
+ 
+ *ngFor="let category of categories"
+ class="btn btn-danger bg-warning text-dark"
+ >
+{{category.categoryName}}
+ </li>
+
+
+  </ul>
